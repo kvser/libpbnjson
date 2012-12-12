@@ -16,4 +16,11 @@
 #
 # LICENSE@@@
 
-TAGFILES = pbnjson-c-src.dxy.tag pbnjson-cxx-src.dxy.tag
+libdir=@WEBOS_INSTALL_LIBDIR@
+includedir=@WEBOS_INSTALL_INCLUDEDIR@
+
+Name: libpbnjson C++ library
+Description: @WEBOS_PROJECT_SUMMARY@ (C++ edition)
+Version: @WEBOS_COMPONENT_VERSION@
+Libs: -L${libdir} -lpbnjson_cpp -lpbnjson_c
+Cflags: -I${includedir}
